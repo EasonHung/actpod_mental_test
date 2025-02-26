@@ -9,6 +9,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class QuestionScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
+
     return Scaffold(
       body: Center(
         child: Column(
@@ -19,7 +22,7 @@ class QuestionScreen extends ConsumerWidget {
               height: 20.h,
             ),
             SizedBox(
-              height: 400.h,
+              height: isPhone? 200.h : 400.h,
               child: Options(),
             ),
           ],

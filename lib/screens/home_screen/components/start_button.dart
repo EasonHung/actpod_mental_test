@@ -5,6 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class StartButton extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
+
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(
@@ -20,7 +23,7 @@ class StartButton extends StatelessWidget{
         child: Text(
           "開始測驗",
           style: TextStyle(
-            fontSize: 24.sp,
+            fontSize: isPhone? 28.sp : 24.sp,
             fontWeight: FontWeight.bold
           ),
         ),

@@ -9,6 +9,8 @@ class Question extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final questionNum = ref.watch(questionNumProvider);
+    final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -16,7 +18,7 @@ class Question extends ConsumerWidget {
         Text(
           questionRepository.getQuestions()[questionNum].question,
           style: TextStyle(
-            fontSize: 24.sp,
+            fontSize: isPhone? 36.sp : 24.sp,
             fontWeight: FontWeight.bold
           )
         )

@@ -22,6 +22,8 @@ class Options extends ConsumerWidget {
   }
 
   Widget option(BuildContext context, WidgetRef ref, Option option, int questionNum) {
+    final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -37,7 +39,7 @@ class Options extends ConsumerWidget {
             }
           },
           child: Container(
-            margin: EdgeInsets.only(bottom: 12.h),
+            margin: EdgeInsets.only(bottom: isPhone? 20.h : 12.h),
             padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12.w),
@@ -46,7 +48,7 @@ class Options extends ConsumerWidget {
             child: Text(
               option.text,
               style: TextStyle(
-                fontSize: 16.sp,
+                fontSize: isPhone? 28.sp : 16.sp,
                 color: Colors.white
               )
             ),

@@ -12,10 +12,13 @@ class ResultTitle extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
+
     return Text(
       result.title,
       style: TextStyle(
-        fontSize: 24.sp,
+        fontSize: isPhone? 36.sp : 24.sp,
         fontWeight: FontWeight.bold,
         color: Colors.black
       ),
