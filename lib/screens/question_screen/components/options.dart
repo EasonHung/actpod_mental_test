@@ -48,7 +48,7 @@ class Options extends ConsumerWidget {
             child: Text(
               option.text,
               style: TextStyle(
-                fontSize: isPhone? 28.sp : 16.sp,
+                fontSize: isPhone? 28.w : 16.sp,
                 color: Colors.white
               )
             ),

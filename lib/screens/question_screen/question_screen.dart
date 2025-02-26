@@ -22,7 +22,7 @@ class QuestionScreen extends ConsumerWidget {
               height: 20.h,
             ),
             SizedBox(
-              height: isPhone? 200.h : 400.h,
+              height: isPhone? 250.h : 400.h,
               child: Options(),
             ),
           ],
