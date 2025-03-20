@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Options extends ConsumerWidget {
   @override
@@ -25,8 +26,15 @@ class Options extends ConsumerWidget {
     final size = MediaQuery.of(context).size;
     final isPhone = size.width < 600;
     return Row(
+      mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        SvgPicture.asset(
+          'assets/images/star.svg',
+          width: isPhone ? 30.w : 15.w,
+          fit: BoxFit.fitWidth,
+        ),
         GestureDetector(
           onTap: () {
             answerRepository.insertAnswer(questionNum, Answer(option.x, option.y));
@@ -39,17 +47,16 @@ class Options extends ConsumerWidget {
             }
           },
           child: Container(
+            width: isPhone ? 300.w : 150.w,
             margin: EdgeInsets.only(bottom: isPhone? 20.h : 12.h),
             padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(12.w),
-              color: Colors.grey
-            ),
             child: Text(
               option.text,
+              textAlign: TextAlign.start,
               style: TextStyle(
-                fontSize: isPhone? 28.w : 16.sp,
-                color: Colors.white
+                fontSize: isPhone? 16.w : 8.w,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               )
             ),
           )
