@@ -47,7 +47,7 @@ class ResultScreen extends ConsumerWidget {
             ),
           ),
           Positioned(
-            bottom: isPhone? 48.h : 32.h,
+            bottom: isPhone? 20.h : 32.h,
             child: ResultButtons(),
           )
         ],
