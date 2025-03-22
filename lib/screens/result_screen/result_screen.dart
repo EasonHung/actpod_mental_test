@@ -30,12 +30,20 @@ class ResultScreen extends ConsumerWidget {
             child: Container(
               width: size.width, // Ensure it covers the full width
               height: size.height,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(isPhone? result.mobileImagePath : result.webImagePath), // Result image
-                  fit: BoxFit.fitWidth, // Ensures the width is fully covered
-                ),
-              ),
+              child: Image(
+                image: AssetImage(isPhone? result.mobileImagePath : result.webImagePath), // Result image
+                fit: BoxFit.fitWidth, // Ensures the width is fully covered
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return const CircularProgressIndicator(color: Colors.red);
+                },
+              )
+              // decoration: BoxDecoration(
+              //   image: DecorationImage(
+              //     image: AssetImage(isPhone? result.mobileImagePath : result.webImagePath), // Result image
+              //     fit: BoxFit.fitWidth, // Ensures the width is fully covered
+              //   ),
+              // ),
             ),
           ),
           Positioned(
