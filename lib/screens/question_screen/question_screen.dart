@@ -32,10 +32,10 @@ class QuestionScreen extends ConsumerWidget {
               ), 
               Question(),
               SizedBox(
-                height: isPhone? 50.h : 20.h,
+                height: isPhone? 32.h : 20.h,
               ),
               SizedBox(
-                height: isPhone? 300.h : 380.h,
+                height: isPhone? 300.h : 360.h,
                 child: Options(),
               ),
               SizedBox(

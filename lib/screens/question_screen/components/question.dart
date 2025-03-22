@@ -19,7 +19,7 @@ class Question extends ConsumerWidget {
         children: [
           SvgPicture.asset(
             'assets/images/question_card.svg', // Replace with your actual SVG file
-            width: isPhone ? 300.w : 140.w,
+            width: isPhone ? 300.w : 120.w,
             fit: BoxFit.fitWidth, // Ensures the image scales well
           ),
           SizedBox(

@@ -35,6 +35,7 @@ class ActPodMentalTest extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'ActPod 心理測驗',
           theme: ThemeData(
+            fontFamily: 'Noto Sans TC',
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           ),
           routerConfig: myRouter,
