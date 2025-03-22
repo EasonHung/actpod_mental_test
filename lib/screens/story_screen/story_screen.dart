@@ -19,6 +19,7 @@ class StoryScreen extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              SizedBox(height: isPhone? 0.h : 120.h),
               story(isPhone),
               SizedBox(height: 60.h),
               startButton(context),
@@ -50,7 +51,7 @@ class StoryScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final isPhone = size.width < 600;
 
-    return GestureDetector(
+    return InkWell(
       onTap: () {
         Navigator.of(context).push(
           MaterialPageRoute(builder: (context) => QuestionScreen())

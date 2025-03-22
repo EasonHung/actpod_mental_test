@@ -2,6 +2,7 @@ import 'package:actpod_mental_test/screens/question_screen/question_screen.dart'
 import 'package:actpod_mental_test/screens/story_screen/story_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class StartButton extends StatelessWidget{
   @override
@@ -9,11 +10,9 @@ class StartButton extends StatelessWidget{
     final size = MediaQuery.of(context).size;
     final isPhone = size.width < 600;
 
-    return GestureDetector(
+    return InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => StoryScreen())
-        );
+        GoRouter.of(context).push('/story');
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 60.w, vertical: 12.h),

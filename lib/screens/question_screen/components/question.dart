@@ -28,7 +28,7 @@ class Question extends ConsumerWidget {
               questionRepository.getQuestions()[questionNum].question,
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: isPhone ? 20.sp : 12.sp,
+                fontSize: isPhone ? 20.sp : 8.sp,
                 fontWeight: FontWeight.bold,
                 color: Colors.black, // Ensure visibility (adjust color if needed)
               ),

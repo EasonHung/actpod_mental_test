@@ -1,8 +1,6 @@
 import 'package:actpod_mental_test/entities/answer.dart';
 import 'package:actpod_mental_test/main.dart';
-import 'package:actpod_mental_test/repositories/result.dart';
-import 'package:actpod_mental_test/screens/result_screen/components/description.dart';
-import 'package:actpod_mental_test/screens/result_screen/components/title.dart';
+import 'package:actpod_mental_test/screens/result_screen/components/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -20,6 +18,7 @@ class ResultScreen extends ConsumerWidget {
     }
     final result = resultRepository.calculateResult(x, y);
     final size = MediaQuery.of(context).size;
+    final isPhone = size.width < 600;
     return Scaffold(
       body: Stack(
         children: [
@@ -30,20 +29,22 @@ class ResultScreen extends ConsumerWidget {
             ),
           ),
           Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
+            top: isPhone? 0 : 30.h,
             child: Container(
               width: size.width, // Ensure it covers the full width
-              height: 760.h, // Adjust height (50% of screen height)
+              height: size.height,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage(result.imagePath), // Result image
+                  image: AssetImage(isPhone? result.mobileImagePath : result.webImagePath), // Result image
                   fit: BoxFit.fitWidth, // Ensures the width is fully covered
                 ),
               ),
             ),
           ),
+          Positioned(
+            bottom: 48.h,
+            child: ResultButtons(),
+          )
         ],
       ),
     );

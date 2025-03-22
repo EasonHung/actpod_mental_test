@@ -25,43 +25,46 @@ class Options extends ConsumerWidget {
   Widget option(BuildContext context, WidgetRef ref, Option option, int questionNum) {
     final size = MediaQuery.of(context).size;
     final isPhone = size.width < 600;
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        SvgPicture.asset(
-          'assets/images/star.svg',
-          width: isPhone ? 30.w : 15.w,
-          fit: BoxFit.fitWidth,
-        ),
-        GestureDetector(
-          onTap: () {
-            answerRepository.insertAnswer(questionNum, Answer(option.x, option.y));
-            if(questionNum == questionRepository.getQuestions().length - 1) {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (context) => ResultScreen())
-              );
-            } else {
-              ref.watch(questionNumProvider.notifier).state = ref.watch(questionNumProvider) + 1;
-            }
-          },
-          child: Container(
+    return InkWell(
+      onTap: () {
+        answerRepository.insertAnswer(questionNum, Answer(option.x, option.y));
+        if (questionNum == questionRepository.getQuestions().length - 1) {
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => ResultScreen()),
+          );
+        } else {
+          ref.watch(questionNumProvider.notifier).state = ref.watch(questionNumProvider) + 1;
+        }
+      },
+      splashColor: Colors.orange.withOpacity(0.3), // Optional: subtle press color
+      borderRadius: BorderRadius.circular(8), // Optional: rounded splash
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SvgPicture.asset(
+            'assets/images/star.svg',
+            width: isPhone ? 30.w : 15.w,
+            fit: BoxFit.fitWidth,
+          ),
+          SizedBox(width: 8.w), // spacing between icon and text
+          Container(
             width: isPhone ? 300.w : 150.w,
-            margin: EdgeInsets.only(bottom: isPhone? 20.h : 12.h),
+            margin: EdgeInsets.only(bottom: isPhone ? 20.h : 12.h),
             padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
             child: Text(
               option.text,
               textAlign: TextAlign.start,
               style: TextStyle(
-                fontSize: isPhone? 16.w : 8.w,
+                fontSize: isPhone ? 16.sp : 8.sp,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
-              )
+              ),
             ),
-          )
-        )
-      ],
+          ),
+        ],
+      ),
     );
   }
 }
