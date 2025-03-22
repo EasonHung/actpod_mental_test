@@ -7,8 +7,8 @@ class HomeTitle extends StatelessWidget {
     final isPhone = size.width < 600;
     return Image.asset(
       'assets/images/homepage_words.png',
-      width: isPhone? 500.w : 320.w,
-      fit: BoxFit.cover,
+      width: isPhone? size.width - 50.w : 260.w,
+      fit: BoxFit.fitWidth,
     );
   }
 }

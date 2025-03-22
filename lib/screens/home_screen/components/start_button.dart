@@ -15,7 +15,7 @@ class StartButton extends StatelessWidget{
         GoRouter.of(context).push('/story');
       },
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 60.w, vertical: 12.h),
+        padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 8.h),
         decoration: BoxDecoration(
           gradient: LinearGradient(
           colors: [

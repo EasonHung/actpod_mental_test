@@ -44614,21 +44614,22 @@ A.atd.prototype={
 $2(a,b){return new A.vV(null)},
 $S:227}
 A.KX.prototype={
-L(a){return A.na("assets/images/homepage_words.png",B.b8,A.b5(a,null,t.w).w.a.a<600?500*$.al().gbL():320*$.al().gbL())}}
+L(a){var s=A.b5(a,null,t.w).w.a.a
+return A.na("assets/images/homepage_words.png",B.b8,s<600?s-50*$.al().gbL():260*$.al().gbL())}}
 A.Pc.prototype={
-L(a){var s=null,r=A.b5(a,s,t.w).w,q=60*$.al().gbL(),p=12*$.al().gbf(),o=A.a([new A.v(4294953015),new A.v(4294934536)],t.t_),n=A.mQ(40*$.al().gbL())
+L(a){var s=null,r=A.b5(a,s,t.w).w,q=40*$.al().gbL(),p=8*$.al().gbf(),o=A.a([new A.v(4294953015),new A.v(4294934536)],t.t_),n=A.mQ(40*$.al().gbL())
 return A.tW(!1,s,!0,A.du(s,A.fE("START",s,s,A.fH(s,s,B.j,s,s,s,s,s,s,s,s,r.a.a<600?$.al().jF(28):$.al().jF(24),s,s,B.fK,s,s,!0,s,s,s,s,s,s,s,s),s),B.r,s,s,new A.d5(s,s,s,n,s,new A.q_(B.cc,B.lH,B.az,o,s,s),B.ad),s,s,new A.b_(q,p,q,p),s),s,!0,s,s,s,s,s,s,s,s,s,new A.ahb(a),s,s,s,s)}}
 A.ahb.prototype={
 $0(){A.tM(this.a).v_("/story",t.X)},
 $S:0}
 A.pN.prototype={
-L(a){var s=null,r=A.b5(a,s,t.w).w,q=A.auc(B.b8,new A.fn("assets/images/background_mobile.png",s,s)),p=A.cH(s,60*$.al().gbf(),s)
+L(a){var s=null,r=A.b5(a,s,t.w).w,q=A.auc(B.bj,new A.fn("assets/images/background_mobile.png",s,s)),p=A.cH(s,60*$.al().gbf(),s)
 return A.kn(s,A.du(s,A.fR(A.pe(A.a([new A.KX(s),p,new A.Pc(s),A.cH(s,r.a.a<600?100*$.al().gbf():100*$.al().gbf(),s)],t.p),B.b4,B.c_),s,s),B.r,s,s,new A.d5(s,q,s,s,s,s,B.ad),s,s,s,s))}}
 A.Mi.prototype={
 hd(a,b){var s=null,r=b.vp($.a_A(),t.S)
 $.a_B()
 return new A.Lz(new A.agP(new A.abG(this,b,r),3,!0,!0,!0,s),s,B.aM,!1,s,s,B.zP,!1,s,3,B.af,B.Ny,s,B.R,B.an,s)},
-api(a,b,c,d){var s=null,r=A.b5(a,s,t.w).w.a.a<600,q=A.mQ(8),p=A.a5(B.d.ai(76.5),255,152,0),o=A.mQ(8),n=r?300*$.al().gbL():240*$.al().gbL(),m=A.aBF("assets/images/star.svg",B.bj,r?30*$.al().gbL():15*$.al().gbL()),l=A.cH(s,s,4*$.al().gbL()),k=12*$.al().gbL(),j=4*$.al().gbf(),i=t.p
+api(a,b,c,d){var s=null,r=A.b5(a,s,t.w).w.a.a<600,q=A.mQ(8),p=A.a5(B.d.ai(76.5),255,152,0),o=A.mQ(8),n=r?300*$.al().gbL():240*$.al().gbL(),m=A.aBF("assets/images/star.svg",B.b8,r?30*$.al().gbL():15*$.al().gbL()),l=A.cH(s,s,4*$.al().gbL()),k=12*$.al().gbL(),j=4*$.al().gbf(),i=t.p
 return A.Bw(A.a([A.q8(B.a9,q,A.tW(!1,o,!0,A.cH(A.Bw(A.a([m,l,new A.tD(1,B.ng,A.du(s,A.fE(c.a,s,s,A.fH(s,s,B.m,s,s,s,s,s,s,s,s,r?$.al().jF(16):$.al().jF(8),s,s,B.b_,s,s,!0,s,s,s,s,s,s,s,s),B.aC),B.r,s,s,s,s,s,new A.b_(k,j,k,j),s),s)],i),B.b9,B.b4,B.c0),s,n),s,!0,s,s,s,s,s,s,s,s,s,new A.abH(d,c,a,b),s,p,s,s),B.r,B.P,0,s,s,s,s,s,B.cC)],i),B.b9,B.da,B.c_)}}
 A.abG.prototype={
 $2(a,b){var s=null,r=$.al().gbf(),q=this.c
@@ -44655,13 +44656,13 @@ k=l}q=s.vp(k,t.TW)
 J.e3(q).a1c(q,s.vp(r,t.S)+1)}},
 $S:0}
 A.Nd.prototype={
-hd(a,b){var s=null,r=b.vp($.a_A(),t.S),q=A.b5(a,s,t.w).w.a.a<600,p=A.aBF("assets/images/question_card.svg",B.bj,q?300*$.al().gbL():120*$.al().gbL()),o=q?250*$.al().gbL():100*$.al().gbL(),n=$.a_B().a[r]
+hd(a,b){var s=null,r=b.vp($.a_A(),t.S),q=A.b5(a,s,t.w).w.a.a<600,p=A.aBF("assets/images/question_card.svg",B.b8,q?300*$.al().gbL():120*$.al().gbL()),o=q?250*$.al().gbL():100*$.al().gbL(),n=$.a_B().a[r]
 return A.fR(A.i0(B.L,A.a([p,A.cH(A.fE(n.a,s,s,A.fH(s,s,B.m,s,s,s,s,s,s,s,s,q?$.al().jF(20):$.al().jF(8),s,s,B.b_,s,s,!0,s,s,s,s,s,s,s,s),B.eI),s,o)],t.p),B.R,B.aU),s,s)}}
 A.atn.prototype={
 $1(a){return 0},
 $S:277}
 A.uK.prototype={
-hd(a,b){var s,r,q,p=null,o=A.b5(a,p,t.w).w.a.a<600,n=b.vp($.a_A(),t.S),m=A.auc(B.b8,new A.fn("assets/images/background_mobile.png",p,p)),l=A.na("assets/images/logo.png",B.bj,o?120*$.al().gbL():30*$.al().gbL()),k=B.c.lm(B.e.j(n+1),2,"0")
+hd(a,b){var s,r,q,p=null,o=A.b5(a,p,t.w).w.a.a<600,n=b.vp($.a_A(),t.S),m=A.auc(B.bj,new A.fn("assets/images/background_mobile.png",p,p)),l=A.na("assets/images/logo.png",B.b8,o?120*$.al().gbL():30*$.al().gbL()),k=B.c.lm(B.e.j(n+1),2,"0")
 k=A.fE(k,p,p,A.fH(p,p,B.m,p,p,p,p,p,p,p,p,o?$.al().jF(20):$.al().jF(10),p,p,B.b_,p,p,!0,p,p,p,p,p,p,p,p),p)
 s=A.cH(p,o?4*$.al().gbf():10*$.al().gbf(),p)
 r=A.cH(p,o?32*$.al().gbf():20*$.al().gbf(),p)
@@ -44708,8 +44709,8 @@ case 3:return A.X(null,r)}})
 return A.Y($async$$0,r)},
 $S:46}
 A.tU.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result3_mobile.png":"assets/images/result3_web.png",s,s),new A.a6W()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result3_mobile.png":"assets/images/result3_web.png",s,s),new A.a6W()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.a6W.prototype={
@@ -44718,8 +44719,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.uj.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result2_mobile.png":"assets/images/result2_web.png",s,s),new A.aaO()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result2_mobile.png":"assets/images/result2_web.png",s,s),new A.aaO()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.aaO.prototype={
@@ -44728,8 +44729,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.un.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result4_mobile.png":"assets/images/result4_web.png",s,s),new A.aby()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result4_mobile.png":"assets/images/result4_web.png",s,s),new A.aby()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.aby.prototype={
@@ -44738,8 +44739,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.uo.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result5_mobile.png":"assets/images/result5_web.png",s,s),new A.abE()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result5_mobile.png":"assets/images/result5_web.png",s,s),new A.abE()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.abE.prototype={
@@ -44748,8 +44749,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.uA.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result7_mobile.png":"assets/images/result7_web.png",s,s),new A.ac4()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result7_mobile.png":"assets/images/result7_web.png",s,s),new A.ac4()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.ac4.prototype={
@@ -44758,8 +44759,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.vf.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result1_mobile.png":"assets/images/result1_web.png",s,s),new A.agH()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result1_mobile.png":"assets/images/result1_web.png",s,s),new A.agH()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.agH.prototype={
@@ -44768,8 +44769,8 @@ $C:"$3",
 $R:3,
 $S:37}
 A.vV.prototype={
-hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.b8,s)),n=p?0:30*$.al().gbf()
-q=A.ec(s,A.du(s,A.tR(B.bj,new A.fn(p?"assets/images/result6_mobile.png":"assets/images/result6_web.png",s,s),new A.ajG()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
+hd(a,b){var s=null,r=A.b5(a,s,t.w).w.a,q=r.a,p=q<600,o=A.qx(0,A.na("assets/images/background_mobile.png",B.bj,s)),n=p?0:30*$.al().gbf()
+q=A.ec(s,A.du(s,A.tR(B.b8,new A.fn(p?"assets/images/result6_mobile.png":"assets/images/result6_web.png",s,s),new A.ajG()),B.r,s,s,s,r.b,s,s,q),s,s,s,s,n,s)
 n=p?48*$.al().gbf():32*$.al().gbf()
 return A.kn(s,A.i0(B.aW,A.a([o,q,A.ec(n,new A.kl(s),s,s,s,s,s,s)],t.p),B.R,B.aU))}}
 A.ajG.prototype={
@@ -44778,7 +44779,7 @@ $C:"$3",
 $R:3,
 $S:37}
 A.vm.prototype={
-L(a){var s,r,q=null,p=A.b5(a,q,t.w).w.a.a<600,o=A.auc(B.b8,new A.fn("assets/images/background_mobile.png",q,q)),n=A.cH(q,p?0*$.al().gbf():120*$.al().gbf(),q),m=$.al().gbL()
+L(a){var s,r,q=null,p=A.b5(a,q,t.w).w.a.a<600,o=A.auc(B.bj,new A.fn("assets/images/background_mobile.png",q,q)),n=A.cH(q,p?0*$.al().gbf():120*$.al().gbf(),q),m=$.al().gbL()
 m=A.cH(A.fE("\u50b3\u8aaa\u4e2d\uff0c\u6709\u4e00\u5ea7\u96b1\u85cf\u5728\u4e16\u754c\u89d2\u843d\u7684\u9b54\u6cd5\u68ee\u6797\uff0c\u53ea\u6703\u5411\u90a3\u4e9b\u8ffd\u6c42\u6975\u81f4\u7684\u4eba\u958b\u653e\u3002\u9019\u5ea7\u68ee\u6797\u5145\u6eff\u4e86\u795e\u79d8\u7684\u529b\u91cf\uff0c\u8ff4\u76ea\u8457\u50b3\u5947 PODCASTER \u7684\u4f4e\u8a9e\uff0c\u6bcf\u4e00\u9663\u98a8\u5439\u904e\uff0c\u90fd\u860a\u542b\u8457\u8aaa\u8a71\u7684\u85dd\u8853\u3002\u9019\u88e1\u6c92\u6709\u56fa\u5b9a\u7684\u9053\u8def\u53ea\u6709\u4e0d\u540c\u7684\u8a66\u7149\u5728\u7b49\u5f85\u4f60 -- \u4f60\u5c07\u78e8\u7df4\u81ea\u5df1\u7684\u8072\u97f3\u3001\u5167\u5bb9\u3001\u98a8\u683c\uff0c\u751a\u81f3\u6316\u6398\u8207\u89c0\u773e\u5efa\u7acb\u6df1\u5c64\u9023\u7d50\u7684\u79d8\u8a23\u3002\n     \n\u70ba\u4e86\u6210\u70ba\u6700\u5f37PODCASTER,\u4f60\u6c7a\u5b9a\u524d\u5f80\u9019\u5ea7\u68ee\u6797\u4fee\u884c\n        ",q,q,A.fH(q,q,q,q,q,q,q,q,q,q,q,p?16*$.al().gbL():8*$.al().gbL(),q,q,B.b_,q,q,!0,q,q,q,q,q,q,q,q),B.eI),q,300*m)
 s=A.cH(q,60*$.al().gbf(),q)
 r=this.a_3(a)
@@ -91098,8 +91099,8 @@ B.J3=A.a(s([B.AT]),t.sq)
 B.ad=new A.IN(0,"rectangle")
 B.AQ=new A.d5(null,null,null,B.f3,B.J3,null,B.ad)
 B.Z1=new A.t1(1,"contain")
-B.b8=new A.t1(2,"cover")
-B.bj=new A.t1(3,"fitWidth")
+B.bj=new A.t1(2,"cover")
+B.b8=new A.t1(3,"fitWidth")
 B.AR=new A.t1(6,"scaleDown")
 B.dH=new A.IK(0,"tight")
 B.lS=new A.IK(5,"strut")
