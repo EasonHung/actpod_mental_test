@@ -27,43 +27,43 @@ final myRouter = GoRouter(
       builder: (context, state) => QuestionScreen(),
     ),
     GoRoute(
-      path: '/result/immediate_editing',
+      path: '/immediate_editing',
       builder: (context, state) {
         return ImmediateEditingResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/mobile_recording',
+      path: '/mobile_recording',
       builder: (context, state) {
         return MobileRecordingResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/noise_processing',
+      path: '/noise_processing',
       builder: (context, state) {
         return NoiseProcessingResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/official_channel',
+      path: '/official_channel',
       builder: (context, state) {
         return OfficialChannelResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/personal_music_library',
+      path: '/personal_music_library',
       builder: (context, state) {
         return PersonalMusicLibraryResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/simple_layout',
+      path: '/simple_layout',
       builder: (context, state) {
         return SimpleLayoutResultScreen();
       },
     ),
     GoRoute(
-      path: '/result/voice_interaction',
+      path: '/voice_interaction',
       builder: (context, state) {
         return VoiceInteractionResultScreen();
       },

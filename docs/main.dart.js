@@ -44645,7 +44645,7 @@ $.a_B()
 if(s===4){for(s=q.length,p=0,o=0,n=0;n<s;++n){m=q[n]
 p+=m.a
 o+=m.b}l=$.aIu().aib(p,o)
-A.tM(j.c).v_("/result/"+l.a,t.X)}else{s=j.d
+A.tM(j.c).v_("/"+l.a,t.X)}else{s=j.d
 r=$.a_A()
 k=r.ch
 if(k===$){l=A.aSL(r,r.$ti.c)
@@ -94500,7 +94500,7 @@ s($,"b0d","aIt",()=>new A.aci())
 r($,"b0i","aIu",()=>new A.aeH(A.a([A.uW("noise_processing",0,45,"\u566a\u97f3\u8655\u7406","\u51b7\u975c\uff0c\u89e3\u6c7a\u554f\u984c\u5c0e\u5411\uff0c\u6c92\u4ec0\u9ebc\u60c5\u7dd2\u8d77\u4f0f","assets/images/result4_mobile.png","assets/images/result4_web.png"),A.uW("voice_interaction",45,90,"\u8a9e\u97f3\u4e92\u52d5","\u5c0d\u67d0\u4e9b\u7279\u5b9a\u9818\u57df\u7684\u8b70\u984c\u7279\u5225\u95dc\u6ce8\uff0c\u63d0\u5230\u95dc\u5fc3\u7684\u4e8b\u60c5\u8a71\u6703\u7279\u5225\u591a\uff0c\u4f46\u5176\u4ed6\u6642\u9593\u53ef\u80fd\u662f\u793e\u6050","assets/images/result6_mobile.png","assets/images/result6_web.png"),A.uW("immediate_editing",90,135,"\u7acb\u5373\u526a\u8f2f","\u6548\u7387\u9ad8\uff0c\u7d30\u5fc3\uff0c\u5abd\u5abd\u611f","assets/images/result3_mobile.png","assets/images/result3_web.png"),A.uW("official_channel",135,180,"ActPod \u5b98\u65b9\u983b\u9053","\u9818\u5c0e\u7acb\u5f37\uff0c\u7d93\u5e38\u662f\u5718\u968a\u4e2d\u7684\u4e3b\u5c0e\u89d2\u8272","assets/images/result5_mobile.png","assets/images/result5_web.png"),A.uW("mobile_recording",180,247.5,"\u96a8\u8eab\u9304\u88fd","\u6d3b\u6f51\uff0c\u793e\u4ea4\u6027\u5f37\uff0c\u96a8\u50b3\u96a8\u5230","assets/images/result2_mobile.png","assets/images/result2_web.png"),A.uW("personal_music_library",247.5,315,"\u500b\u4eba\u97f3\u6a02\u5eab","\u6709\u4e3b\u898b\uff0c\u4f46\u4e0d\u5e38\u8868\u9054\uff0c\u7368\u4f86\u7368\u5f80\uff0c\u559c\u597d\u5206\u660e","assets/images/result7_mobile.png","assets/images/result7_web.png"),A.uW("simple_layout",315,360,"\u7c21\u6f54\u7248\u9762","\u7d66\u5225\u4eba\u60c5\u7dd2\u50f9\u503c\u5c45\u591a\uff0c\u8046\u807d\u8005","assets/images/result1_mobile.png","assets/images/result1_web.png")],A.a6("r<Bq>"))))
 r($,"b0h","a_B",()=>A.aB1())
 r($,"b_U","axw",()=>new A.a_Y())
-s($,"b0a","aIq",()=>{var q=null,p=A.a([A.k0(new A.at4(),"/"),A.k0(new A.at5(),"/story"),A.k0(new A.at6(),"/question"),A.k0(new A.at7(),"/result/immediate_editing"),A.k0(new A.at8(),"/result/mobile_recording"),A.k0(new A.at9(),"/result/noise_processing"),A.k0(new A.ata(),"/result/official_channel"),A.k0(new A.atb(),"/result/personal_music_library"),A.k0(new A.atc(),"/result/simple_layout"),A.k0(new A.atd(),"/result/voice_interaction")],t.yo)
+s($,"b0a","aIq",()=>{var q=null,p=A.a([A.k0(new A.at4(),"/"),A.k0(new A.at5(),"/story"),A.k0(new A.at6(),"/question"),A.k0(new A.at7(),"/immediate_editing"),A.k0(new A.at8(),"/mobile_recording"),A.k0(new A.at9(),"/noise_processing"),A.k0(new A.ata(),"/official_channel"),A.k0(new A.atb(),"/personal_music_library"),A.k0(new A.atc(),"/simple_layout"),A.k0(new A.atd(),"/voice_interaction")],t.yo)
 return A.aLt(!1,q,q,q,q,q,q,q,q,!1,q,!0,q,!1,new A.Ry(new A.af4(p,A.aVv(),5)))})
 s($,"b0g","a_A",()=>B.B_.$1$1(new A.atn(),t.S))
 s($,"b_3","aHG",()=>A.avx(1,1,500))

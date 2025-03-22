@@ -49,7 +49,7 @@ class Options extends ConsumerWidget {
                   y += answer.y;
                 }
                 final result = resultRepository.calculateResult(x, y);
-                GoRouter.of(context).push('/result/${result.id}');
+                GoRouter.of(context).push('/${result.id}');
               } else {
                 ref.watch(questionNumProvider.notifier).state =
                     ref.watch(questionNumProvider) + 1;
