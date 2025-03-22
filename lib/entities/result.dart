@@ -1,4 +1,5 @@
 class Result {
+  String id;
   double angleDegreeFrom;
   double angleDegreeTo;
   String title;
@@ -6,5 +7,6 @@ class Result {
   String mobileImagePath;
   String webImagePath;
 
-  Result(this.angleDegreeFrom, this.angleDegreeTo, this.title, this.description, this.mobileImagePath, this.webImagePath);
+  Result(this.id, this.angleDegreeFrom, this.angleDegreeTo, this.title, this.description,
+      this.mobileImagePath, this.webImagePath);
 }

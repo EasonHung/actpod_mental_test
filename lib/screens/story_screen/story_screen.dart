@@ -1,6 +1,7 @@
 import 'package:actpod_mental_test/screens/question_screen/question_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class StoryScreen extends StatelessWidget {
   @override
@@ -53,9 +54,7 @@ class StoryScreen extends StatelessWidget {
 
     return InkWell(
       onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => QuestionScreen())
-        );
+        GoRouter.of(context).push('/question');
       },
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 60.w, vertical: 12.h),

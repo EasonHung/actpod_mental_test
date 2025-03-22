@@ -8,6 +8,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 class Options extends ConsumerWidget {
   @override
@@ -29,9 +30,15 @@ class Options extends ConsumerWidget {
       onTap: () {
         answerRepository.insertAnswer(questionNum, Answer(option.x, option.y));
         if (questionNum == questionRepository.getQuestions().length - 1) {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => ResultScreen()),
-          );
+          final answers = answerRepository.getAnswers();
+          double x = 0;
+          double y = 0;
+          for(Answer answer in answers) {
+            x = x + answer.x;
+            y = y + answer.y;
+          }
+          final result = resultRepository.calculateResult(x, y);
+          GoRouter.of(context).push('/result/${result.id}');
         } else {
           ref.watch(questionNumProvider.notifier).state = ref.watch(questionNumProvider) + 1;
         }
