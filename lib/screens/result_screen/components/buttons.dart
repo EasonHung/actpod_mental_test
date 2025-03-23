@@ -88,7 +88,7 @@ class ResultButtons extends ConsumerWidget {
           ),
           child: Center(
             child: Text(
-              "分享",
+              "分享結果",
               style: TextStyle(
                 fontWeight: FontWeight.bold, 
                 fontSize: isPhone? 16.w : 8.w
