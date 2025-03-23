@@ -47,7 +47,7 @@ class NoiseProcessingResultScreen extends ConsumerWidget {
             ),
           ),
           Positioned(
-            bottom: isPhone? 48.h : 32.h,
+            bottom: isPhone? 24.h : 32.h,
             child: ResultButtons(),
           )
         ],

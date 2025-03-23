@@ -38,7 +38,7 @@ class StoryScreen extends StatelessWidget {
       child: Text(
         '''傳說中，有一座隱藏在世界角落的魔法森林，只會向那些追求極致的人開放。這座森林充滿了神秘的力量，迴盪著傳奇 PODCASTER 的低語，每一陣風吹過，都蘊含著說話的藝術。這裡沒有固定的道路只有不同的試煉在等待你 -- 你將磨練自己的聲音、內容、風格，甚至挖掘與觀眾建立深層連結的秘訣。
      
-為了成為最強PODCASTER,你決定前往這座森林修行
+為了成為最強PODCASTER，你決定前往這座森林修行
         ''',
         textAlign: TextAlign.center,
         style: TextStyle(
