@@ -26,24 +26,24 @@ class SimpleLayoutResultScreen extends ConsumerWidget {
             ),
           ),
           Positioned(
-            top: isPhone? 0 : 30.h,
+            top: isPhone ? 0 : 30.h,
             child: Container(
-              width: size.width, // Ensure it covers the full width
+              width: size.width,
               height: size.height,
-              child: Image(
-                image: AssetImage(isPhone? "assets/images/result1_mobile.png" : "assets/images/result1_web.png"), // Result image
-                fit: BoxFit.fitWidth, // Ensures the width is fully covered
-                loadingBuilder: (context, child, loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return const CircularProgressIndicator(color: Colors.red);
-                },
-              )
-              // decoration: BoxDecoration(
-              //   image: DecorationImage(
-              //     image: AssetImage(isPhone? result.mobileImagePath : result.webImagePath), // Result image
-              //     fit: BoxFit.fitWidth, // Ensures the width is fully covered
-              //   ),
-              // ),
+              child: InteractiveViewer(
+                panEnabled: true, // allows dragging
+                scaleEnabled: true, // allows zooming
+                minScale: 1.0,
+                maxScale: 4.0, // you can adjust this
+                child: Image.asset(
+                  isPhone
+                      ? "assets/images/result1_mobile.png"
+                      : "assets/images/result1_web.png",
+                  fit: BoxFit.fitWidth,
+                  width: size.width,
+                  height: size.height,
+                ),
+              ),
             ),
           ),
           Positioned(

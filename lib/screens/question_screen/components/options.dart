@@ -2,7 +2,6 @@ import 'package:actpod_mental_test/entities/answer.dart';
 import 'package:actpod_mental_test/entities/question.dart';
 import 'package:actpod_mental_test/main.dart';
 import 'package:actpod_mental_test/screens/question_screen/providers.dart';
-import 'package:actpod_mental_test/screens/result_screen/result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

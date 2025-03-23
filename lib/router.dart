@@ -1,7 +1,6 @@
 import 'package:actpod_mental_test/main.dart';
 import 'package:actpod_mental_test/screens/home_screen/home_screen.dart';
 import 'package:actpod_mental_test/screens/question_screen/question_screen.dart';
-import 'package:actpod_mental_test/screens/result_screen/result_screen.dart';
 import 'package:actpod_mental_test/screens/result_screen/screens/immediate_editing_screen.dart';
 import 'package:actpod_mental_test/screens/result_screen/screens/mobile_recording_screen.dart';
 import 'package:actpod_mental_test/screens/result_screen/screens/noise_processing_screen.dart';
