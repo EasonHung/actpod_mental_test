@@ -34,6 +34,7 @@ class NoiseProcessingResultScreen extends ConsumerWidget {
               child: Container(
                 width: size.width,
                 child: InteractiveViewer(
+                  boundaryMargin: EdgeInsets.all(double.infinity),
                   panEnabled: true,
                   scaleEnabled: true,
                   minScale: 0.5,
