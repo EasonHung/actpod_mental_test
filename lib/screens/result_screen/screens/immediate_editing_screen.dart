@@ -21,35 +21,46 @@ class ImmediateEditingResultScreen extends ConsumerWidget {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/images/background_mobile.png', // Replace with your background image path
-              fit: BoxFit.cover, // Ensures it covers the entire screen
+              'assets/images/background_mobile.png',
+              fit: BoxFit.cover,
             ),
           ),
-          Positioned(
-            top: isPhone ? 0 : 30.h,
-            child: Container(
-              width: size.width,
-              height: size.height,
+          SingleChildScrollView(
+            child: Padding(
+              padding: EdgeInsets.only(
+                top: isPhone ? 0 : 30.h,
+                bottom: 100, 
+              ),
               child: InteractiveViewer(
-                panEnabled: true, // allows dragging
-                scaleEnabled: true, // allows zooming
-                minScale: 1.0,
-                maxScale: 4.0, // you can adjust this
-                child: Image.asset(
-                  isPhone
-                      ? "assets/images/result3_mobile.png"
-                      : "assets/images/result3_web.png",
-                  fit: BoxFit.fitWidth,
-                  width: size.width,
-                  height: size.height,
+                panEnabled: true,
+                scaleEnabled: true,
+                minScale: 0.5,
+                maxScale: 4.0,
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    minWidth: size.width,
+                    minHeight: size.height,
+                  ),
+                  child: Image.asset(
+                    isPhone
+                        ? "assets/images/result3_mobile.png"
+                        : "assets/images/result3_web.png",
+                    fit: BoxFit.contain,
+                    width: size.width,
+                    height: size.height,
+                  ),
                 ),
               ),
             ),
           ),
           Positioned(
-            bottom: isPhone? 24.h : 32.h,
-            child: ResultButtons(),
-          )
+            bottom: isPhone ? 12.h : 32.h,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: ResultButtons(),
+            ),
+          ),
         ],
       ),
     );
